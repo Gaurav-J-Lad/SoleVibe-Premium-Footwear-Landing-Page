@@ -1,0 +1,818 @@
+/* ============================= */
+/*          COLOR SYSTEM         */
+/* ============================= */
+/*
+--primary-pink:       #d4008f;     (Stronger pink)
+--secondary-pink:     #ca0c9a;     (Used for buttons and hover)
+--soft-pink-bg:       #fff0f7;     (Section backgrounds)
+--cta-dark-bg:        #4c043a;     (Text over light)
+--cream-bg:           #fdf2e9;     (Inputs, soft sections)
+--text-dark:          #2a0024;     (Primary body text)
+--footer-gradient:    linear-gradient(to right, #d4008f, #ff2d55);
+*/
+
+/* *************************************************************** */
+/* ************************* HEADER SECTION ********************** */
+/* *************************************************************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  align-items: center;
+  background-color: #fff0f7;
+  position: relative;
+}
+
+.logo {
+  height: 14rem;
+  width: 100%;
+}
+/* ***************************************************************** */
+/* ************************* NAVIGATION SECTION ************************ */
+/* ***************************************************************** */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: #d4008f;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #d4008f;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #4c043a;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  border-radius: 1rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #ca0c9a;
+  color: #ffffff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #4c043a;
+  color: #ffffff;
+}
+
+/* MOBILE DROPDOWN NAVIGATION ICON */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fc0fc0;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fecff2;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.2rem;
+}
+/* *************************************************************** */
+/* ************************* HERO SECTION ************************ */
+/* *************************************************************** */
+
+.section-hero {
+  background-color: #fff0f7;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 130rem;
+  gap: 9.6rem;
+  text-align: center;
+  padding: 0 3.2rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero1 {
+  max-width: 55%;
+  max-height: 30%;
+  position: relative;
+  right: 25rem;
+  top: 0;
+  z-index: 0;
+}
+
+.hero2 {
+  max-width: 55%;
+  max-height: 30%;
+  position: relative;
+  top: -5rem;
+  right: 0;
+  z-index: 1;
+}
+
+.hero3 {
+  max-width: 55%;
+  max-height: 30%;
+  position: relative;
+  right: 25rem;
+  bottom: 10rem;
+  z-index: 0;
+}
+
+.shopping-users-list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 12rem;
+}
+
+.shopping-users-imgs {
+  display: flex;
+}
+
+.shopping-users-imgs img {
+  display: flex;
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 4px solid #ca0c9a;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+}
+
+.shopping-users-imgs img:last-child {
+  margin: 0;
+}
+
+.shopping-users-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.shopping-users-text span {
+  color: #d4008f;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+/* ************************************************************* */
+/* ********************* FEATURED-IN SECTION ******************* */
+/* ************************************************************* */
+.section-featured-in {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/* ************************************************************** */
+/* ********************* FIND YOUR FIT SECTION ******************* */
+/* ************************************************************** */
+.section-types-of-products {
+  padding: 9.6rem 0;
+}
+
+.shoe-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #d4008f;
+  margin-bottom: 1.2rem;
+}
+
+.shoe-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.shoe-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.shoe-img-box {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.shoe-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.shoe-list-1,
+.shoe-list-2 {
+  list-style: decimal;
+  font-size: 2.2rem;
+  line-height: 2.2;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: #e30ead;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+/* ************************************************************** */
+/* ************** SHOE CATEGORY DESCRIPTION SECTION ************* */
+/* ************************************************************** */
+.section-shoe-category-description {
+  padding: 9.6rem 0;
+  text-align: center;
+}
+
+.shoe-category-description-title {
+  font-size: 2.4rem;
+  color: #fc0fc0;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.shoe-category-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fd3fcd;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+}
+
+.shoe-category-description-attributes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 2.4rem;
+  padding: 0;
+  margin-top: 2.4rem;
+  list-style: none;
+}
+
+.shoe-category-description-attribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 130px;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.attribute-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fd3fcd;
+  gap: 0.4rem;
+  min-height: 60px;
+}
+
+.attribute-header i {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #fd3fcd;
+  transition: all 0.3s;
+}
+
+.attribute-header i:hover {
+  transform: scale(1.1);
+}
+
+.attribute-content {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.shoe-category-description-img {
+  width: 100%;
+}
+
+.star-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: #fc0fc0;
+}
+
+.shoe-category-description-card {
+  box-shadow: 0 2.4rem 4.8rem #fc0fc135;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 8rem;
+  transition: all 1s;
+}
+
+.shoe-category-description-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem #fc0fc185;
+}
+
+.shoe-category-description-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+.shoe-category-description-card-features {
+  box-shadow: 0 2.4rem 4.8rem #fc0fc135;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 8rem;
+  padding-top: 4rem;
+  transition: all 1s;
+}
+
+.shoe-category-description-card-features:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem #fc0fc185;
+}
+
+.shoe-category-description-content-features {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.shoe-category-description-title-features {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #d4008f;
+}
+
+.shoe-category-description-features {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #d4008f;
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.all-categories {
+  font-size: 1.8rem;
+}
+
+.icon-attr {
+  font-size: 4rem;
+  color: #fd3fcd;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.icon-link {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-left: 0.1rem;
+}
+
+/* ************************************************************** */
+/* ************** SHOE TESTIMONIALS SECTION ************* */
+/* ************************************************************** */
+.section-testimonials {
+  background-color: #fecff2;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonial-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.08);
+  aspect-ratio: 1 / 1;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* ************************************************************** */
+/* ************** PRICING AND FEATURES SECTION ************* */
+/* ************************************************************** */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 1.1rem;
+  width: 100%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fecff2;
+  padding: 4.8rem;
+  background-color: #fff;
+}
+
+.icon-pricing {
+  font-size: 5rem;
+  color: #d4008f;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}
+
+.pricing-plan--complete {
+  justify-self: end;
+  background-color: #fecff2;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Selling";
+  position: absolute;
+  top: 5%;
+  right: -16%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  color: #333;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #d4008f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.84rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.list-pricing {
+  list-style: none;
+  padding-left: 0;
+  margin: 3.2rem 0;
+}
+
+.list-item-pricing {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.8rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fc0fc033;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.feature-icon {
+  margin-bottom: 3.4rem;
+}
+
+.icon-feature {
+  font-size: 4rem;
+  color: #d4008f;
+  margin-bottom: 0.8rem;
+}
+
+.icon-btn {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+/* ************************************************************** */
+/* ************************** CTA SECTION *********************** */
+/* ************************************************************** */
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to right bottom, #d4008f, #4c043a);
+  box-shadow: 0 2.8rem 4.2rem rgba(212, 0, 143, 0.4);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #fff0f7;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+  font-size: 3.9rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(252, 39, 199, 0.25),
+    rgba(202, 12, 154, 0.25)
+  );
+  /* url("../img/tieing-shoe.jpg"); */
+  background-position: center;
+  background-size: cover;
+  width: 110%;
+  height: 100%;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #fdf2e9;
+  color: #2a0024;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #4c043a;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.icon-submit {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.btn--form {
+  background-color: #4c043a;
+  color: #fdf2e9;
+}
+
+.btn--form:hover {
+  background-color: #d4008f;
+  color: #ffffff;
+}
+
+/* ************************************************************** */
+/* ************************** FOOTER **************************** */
+/* ************************************************************** */
+.footer {
+  padding: 12.8rem 0;
+  border-top: 4px solid #eee;
+  background-image: linear-gradient(to right, #d4008f, #ff2d55);
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  margin-top: -6rem;
+  padding: 1rem 0;
+}
+
+.footer-logo img.logo {
+  width: 20rem;
+  height: auto;
+  display: block;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.tagline {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #ffffff;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  color: #ffffff;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #f5f5f5;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+  color: #ffffff;
+}
+
+.footer-link ion-icon {
+  font-size: 3rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: inherit;
+}
+
+/* .rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
