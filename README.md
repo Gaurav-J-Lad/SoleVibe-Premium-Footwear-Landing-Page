@@ -43,7 +43,8 @@ Crafted using **HTML, CSS & JavaScript**, the site blends vibrant design, produc
 
 🌐 **Netlify Live Demo:**
 
-Check out the live site here:
+Check out the live site here:  
+🔗 [solevibe-premium-footwear.netlify.app](https://solevibe-premium-footwear.netlify.app)
 
 ---
 
